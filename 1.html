@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+   <head>
+      <title>01</title>
+   </head>
+   <body>
+   		<style type="text/css" media="screen">
+   	*,*::before,*::after
+   	{
+   		box-sizing: border-box;
+   	}
+   	body
+   	{
+   		margin: 0;
+   		padding: 0;
+   		background: #000000;
+   	}
+   	.box__body
+   	{
+   		position: absolute;
+   		top: 50%;
+   		left: 50%;
+   		transform: translate(-50% , -50%);
+   		color: black;
+   	}
+   	.box
+   	{
+   		margin: 0;
+   		padding: 2rem;
+   		position: relative;
+   		background: #ccc;
+   	}
+   	h1
+   	{
+   		position: absolute;
+   		font-size: 50px;
+   		transition: .2s;
+   		color: rgba(0,0,0,.25);
+   	}
+   	.box:hover h1
+   	{
+   		top: 60px;
+   		left: 50px;
+   		font-size: 80px;
+   	}
+   	.box::before
+   	{
+   		content: '';
+   		position: absolute;
+   		top: -5px;
+   		left: -5px;
+   		bottom: -5px;
+   		right: -5px;
+   		transform: skew(5deg);
+   		z-index: -1;
+     background: linear-gradient(#2154CF,#F79700);
+   	}
+   	.box::after
+   	{
+   		content: '';
+   		position: absolute;
+   		pointer-events: none;
+   		top: 0;
+   		left: 0;
+   		width: 50%;
+   		height: 100%;
+   		background: rgba(0,0,0,.5);
+   	}
+   		</style>
+     <div class="box__body">
+     	<div class="box">
+     		<h1>01</h1>
+     		<h2>Service name</h2>
+     		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus viverra accumsan in nisl nisi scelerisque. Pellentesque elit eget gravida cum sociis natoque penatibus et magnis. Suspendisse sed nisi lacus sed viverra tellus in hac. Faucibus nisl tincidunt eget nullam non nisi est. Non curabitur gravida arcu ac tortor dignissim convallis aenean. Laoreet id donec ultrices tincidunt. Lectus mauris ultrices eros in cursus turpis massa tincidunt dui. Interdum consectetur libero id faucibus niiam maecenas ultricies mi eget mauris pharetra </p>
+     		<a href="index.html">Back to home.</a>
+     	</div>
+     </div>
+   </body>
+</html>
